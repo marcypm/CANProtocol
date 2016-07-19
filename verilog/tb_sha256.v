@@ -61,7 +61,7 @@ wire full, empty;
 reg [7:0] inputbits;
 wire [7:0] outputbits;
 
-fifoBuffer fifo(
+fifo buffer(
 .clock (clk),
 .reset (resetFifo),
 .wr (wr),

@@ -120,14 +120,20 @@ always @(posedge wp) begin
     if(!rst) begin
         outEn <= 0;
         wriEn <= 1;
+
+	resetFifo <= 0; //toggle buffer reset off
+ 	wr <= 1;//buffer in write mode
+        rd <= 0;
     end
 end
  
 always @(posedge shaFinish) begin //need to add the data to a line to feed to CANBus crc_out
+    wr <= 0;
+    rd <= 1;// buffer in read mode now
     $display("At t=%t clk=%b ", $time,clk);
     $display("Cycles: %d", ($time-50)/20);
     $display("DATA:  %d", data);
-    #10000
+    #1000
     $stop;
 end
 
