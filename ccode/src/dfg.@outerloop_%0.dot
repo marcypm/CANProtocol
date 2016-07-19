@@ -1,0 +1,14 @@
+digraph {
+Node0x3725910[label="  %W = alloca [64 x i32], align 4"];
+Node0x3725910 -> Node0x3725910[label="D:0.00ns L:0",color=blue];
+Node0x3725910 -> Node0x3725910[label="D:0.00ns L:0",color=blue];
+Node0x3725910 -> Node0x3725910[label="D:0.00ns L:0",color=blue];
+Node0x3725910 -> Node0x3725910[label="D:0.00ns L:0",color=blue];
+Node0x3725910 -> Node0x3725910[label="D:0.00ns L:0",color=blue];
+Node0x3725910 -> Node0x3725910[label="D:0.00ns L:0",color=blue];
+Node0x3725910 -> Node0x3725910[label="D:0.00ns L:0",color=blue];
+Node0x3722710[label="  %1 = icmp sgt i32 %numBlocks, 0"];
+Node0x3722710 -> Node0x3722710[label="D:3.13ns L:0",color=blue];
+Node0x3725e00[label="  %smax = select i1 %1, i32 %numBlocks, ..."];
+Node0x3725e00 -> Node0x3725e00[label="D:3.99ns L:0",color=blue];
+}

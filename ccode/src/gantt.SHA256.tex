@@ -1,0 +1,16 @@
+\documentclass[landscape]{article}
+\usepackage{gantt}
+\pagestyle{empty}
+\begin{document}
+\begin{figure}
+\begin{gantt}[fontsize=\scriptsize]{4}{6}
+\begin{ganttitle}
+\numtitle{0}{1}{5}{1}
+\end{ganttitle}
+\ganttbar{  \%1 = call i32 @pad(i8* getelementptr inbounds ([192 x i8]* @gData, i32 0, i32...}{2}{1}
+\ganttcon{3}{1}{4}{2}
+\ganttbar{  call void @outerloop(i32* getelementptr inbounds ([8 x i32]* @gDigest, i32 0, ...}{4}{1}
+\ganttbar{  ret void}{5}{1}
+\end{gantt}
+\end{figure}
+\end{document}

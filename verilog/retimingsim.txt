@@ -1,0 +1,12 @@
+vsim -c -do "run 700000000000ns; exit;" work."sha256"
+Reading pref.tcl
+
+# 10.3d
+
+# vsim -c -do "run 700000000000ns; exit;" work.sha256 
+# Start time: 14:23:23 on Dec 14,2015
+# Loading work.sha256
+# run 700000000000ns
+#  exit
+# End time: 14:23:25 on Dec 14,2015, Elapsed time: 0:00:02
+# Errors: 0, Warnings: 0

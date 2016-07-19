@@ -1,0 +1,33 @@
+module top(
+    clk,
+    reset,
+    start,
+    waitrequest,
+    finish,
+    return_val
+);
+
+input clk, reset,start,waitrequest;
+output finish;
+output return_val;
+
+reg [31:0] rv;
+reg f;
+reg [3:0]ctr;
+
+always @ (posedge clk )
+    if(reset) begin
+        rv <= 5965;
+        ctr <= 0;
+        f <=0;
+    end else if (ctr>=10) begin
+        rv <= 32;
+        f <= 1;
+    end else begin
+        ctr <= ctr +1;
+    end
+
+assign return_val = rv;
+assign finish = f;
+
+endmodule

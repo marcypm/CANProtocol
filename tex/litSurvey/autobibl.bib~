@@ -1,0 +1,323 @@
+
+IEEEexample.bib 
+V1.12 (2007/01/11)
+Copyright (c) 2002-2007 by Michael Shell
+See: http://www.michaelshell.org/
+for current contact information.
+
+This is an example BibTeX database for the official IEEEtran.bst
+BibTeX style file.
+
+Some entries call strings that are defined in the IEEEabrv.bib file.
+Therefore, IEEEabrv.bib should be loaded prior to this file. 
+Usage: 
+
+\bibliographystyle{IEEEtran}
+\bibliography{IEEEabrv}
+
+
+
+*************************************************************************
+Legal Notice:
+This code is offered as-is without any warranty either expressed or
+implied; without even the implied warranty of MERCHANTABILITY or
+FITNESS FOR A PARTICULAR PURPOSE! 
+User assumes all risk.
+In no event shall IEEE or any contributor to this code be liable for
+any damages or losses, including, but not limited to, incidental,
+consequential, or any other damages, resulting from the use or misuse
+of any information contained here.
+
+All comments are the opinions of their respective authors and are not
+necessarily endorsed by the IEEE.
+
+This work is distributed under the LaTeX Project Public License (LPPL)
+( http://www.latex-project.org/ ) version 1.3, and may be freely used,
+distributed and modified. A copy of the LPPL, version 1.3, is included
+in the base LaTeX documentation of all distributions of LaTeX released
+2003/12/01 or later.
+Retain all contribution notices and credits.
+** Modified files should be clearly indicated as such, including  **
+** renaming them and changing author support contact information. **
+
+File list of work: IEEEabrv.bib, IEEEfull.bib, IEEEexample.bib,
+                   IEEEtran.bst, IEEEtranS.bst, IEEEtranSA.bst,
+                   IEEEtranN.bst, IEEEtranSN.bst, IEEEtran_bst_HOWTO.pdf
+*************************************************************************
+
+
+1 Twitter web article
+@electronic{EdwardsExclusive,
+ authors   = "A. Edwards",
+ title     = "Twitter integration coming to OnStar",
+ url       = "http://www.gearlive.com/news/article/q109-exclusive-twitter-integration-coming-to-onstar/",
+ year		= "2009",
+ month     = "March"
+}
+
+2 Collision avoidance
+@misc{CAMP,
+  title         = "Cooperative intersection collision avoidance system limited to stop sign and traffic signal violations midterm phase i report",
+  organization  = "National Highway Traffic Safety Administration",
+  month         = oct,
+  year          = "2008"
+}
+
+4 car hacking
+@inproceedings{koscher,
+  authors        = "K. Koscher, A. Czeskis, F. Roesner, S. Patel, T. Kohno, S. Checkoway, D. McCoy, B. Kantor, D. Anderson, H. Shacham, and S. Savage",
+  title         = "Experimental security analysis of a modern automobile",
+  booktitle     = "Proc. {IEEE} Symposium on Security and Privacy",
+  month         = May,
+  year          = "2010",
+  pages         = "447-462"
+}
+
+5 automotive software
+@inproceedings{autoSoft,
+  authors        = "M. Broy, I.H. Kruger, A. Pretschner, and C. Salzmann",
+  title         = "Engineering automotive software",
+  booktitle     = "Proceedings of the {IEEE} ",
+  volume 		= "95",
+  number		= "2",
+  
+  month         = Feb,
+  year          = "2007",
+  pages         = "356-373"
+}
+
+6 ieee code car web article
+@electronic{carCode,
+ authors   = "R. Charette",
+ title     = "This car runs on code",
+ url       = "http://www.spectrum.ieee.org/feb09/7649",
+ year		= "2009",
+ month     = "Feb"
+}
+
+7 Can overview
+@article{CanOverview,
+  author        = "M. Farsi and K. Ratcliff and Manuel Barbosa",
+  title         = "An overview of controller area network",
+  journal       = "Computing \& Control Engineering Journal",
+  volume        = "10",
+  number        = "3",
+  year          = "1999",
+  pages         = "113-120"
+}
+
+8 can basics
+@misc{CanBasics,
+  title         = "Controller area network (can) basics",
+  organization  = " Microchip Technology Inc",
+  author		= "Pazul, Keith",
+  year          = "1999"
+}
+
+9 Can security using mac
+@inproceedings{canMac,
+  authors        = "Chung-Wei Lin and Alberto Sangiovanni-Vincentelli",
+  title         = " Cyber-Security for the Controller Area Network (CAN) Communication Protocol",
+  booktitle     = "Proceedings of the International Conference on Cyber Security",
+  url			= "http://dx.doi.org/10.1109/CyberSecurity.2012.7",
+  address       = "Washington, DC",
+  month         = Feb,
+  year          = "2012",
+  pages         = "1-7"
+  
+}
+
+
+10 Can security using otp
+@inproceedings{canOtp,
+  authors        = "Groza, Bogdan (Faculty of Automatics and Computers, Politehnica University of Timisoara, Timisoara, Romania) and Murvay, Stefan",
+  title         = "Secure broadcast with one-time signatures in Controller Area Networks",
+  booktitle     = "Proceedings of the 2011 6th International Conference on Availability, Reliability and Security",
+  year          = "2011",
+  pages         = "371-376"
+  
+}
+
+11 WIRELESS car hack
+@inproceedings{checkoway2011comprehensive,
+  title={Comprehensive Experimental Analyses of Automotive Attack Surfaces.},
+  author={Checkoway, Stephen and McCoy, Damon and Kantor, Brian and Anderson, Danny and Shacham, Hovav and Savage, Stefan and Koscher, Karl and Czeskis, Alexei and Roesner, Franziska and Kohno, Tadayoshi and others},
+  booktitle={USENIX Security Symposium},
+  year={2011},
+  organization={San Francisco}
+}
+
+12 cruise control
+@article{ccpaper,
+  title={Autonomous intelligent cruise control},
+  author={Ioannou, Petros A and Chien, Cheng-Chih},
+  journal={Vehicular Technology, IEEE Transactions on},
+  volume={42},
+  number={4},
+  pages={657--672},
+  year={1993},
+  publisher={IEEE}
+}
+
+13 Cruise art 2
+@electronic{ccweb,
+  title         = "Cruise Control: System Modeling",
+  author		= "Keith Pazul",
+  url			= "http://ctms.engin.umich.edu/CTMS/index.php?example=CruiseControl\&section=SystemModeling",
+  month			= Dec,
+  year          = "2014"
+}
+
+14 feedback systems
+@book{astrom2010feedback,
+  title={Feedback systems: an introduction for scientists and engineers},
+  author={Astr{\"o}m, Karl Johan and Murray, Richard M},
+  year={2010},
+  publisher={Princeton university press}
+}
+
+17 v2v comms
+@article{biswas2006vehicle,
+  title={Vehicle-to-vehicle wireless communication protocols for enhancing highway traffic safety},
+  author={Biswas, Subir and Tatchikou, Raymond and Dion, Francois},
+  journal={Communications Magazine, IEEE},
+  volume={44},
+  number={1},
+  pages={74--82},
+  year={2006},
+  publisher={IEEE}
+}
+
+18 cc tutorial
+@misc{messner1999control,
+  title={Control Tutorials for MATLAB and Simulink},
+  author={Messner, Bill and Tilbury, Dawn and Hill, Asst Prof Rick},
+  year={1999},
+  publisher={Addison-Wesley}
+}
+
+15
+@electronic{CoopmanToyota,
+ authors   = "Philip Coopman",
+ title     = "A Case Study of Toyota Unintended Acceleration and Software Safety",
+ url       = "http://betterembsw.blogspot.ca/2014/09/a-case-study-of-toyota-unintended.html"
+}
+
+16 
+@electronic{cbsToyota,
+ authors   = "CBS News",
+ title     = "Toyota ‘Unintended Acceleration’ has killed 89",
+ url       = "http://www.cbsnews.com/news/toyota-unintended-acceleration-has-killed-89"
+}
+
+17
+CCSDS's Blue Book handled as a standard
+Probably the best approach for this particular case because the work
+is standard related. Note that IEEE does not display the address for
+standards.
+@standard{IEEEexample:bluebookstandard,
+  title         = "Telemetry Channel Coding",
+  howpublished  = "ser. Blue Book, No. 4",
+  organization  = "Consulative Committee for Space Data Systems (CCSDS)",
+  address       = "Newport Beach, CA",
+  type          = "Recommendation for Space Data System Standard",
+  number        = "101.0-B-4",
+  month         = May,
+  year          = "1999",
+  url           = "http://www.ccsds.org/documents/pdf/CCSDS-101.0-B-4.pdf"
+}
+
+18 
+Star coupling router
+@inproceedings{kammerer2012enhancing,
+  title={Enhancing security in CAN systems using a star coupling router},
+  author={Kammerer, Roland and Fr{\"o}mel, Bernhard and Wasicek, Armin},
+  booktitle={Industrial Embedded Systems (SIES), 2012 7th IEEE International Symposium on},
+  pages={237--246},
+  year={2012},
+  organization={IEEE}
+}
+
+
+
+
+
+
+
+
+An example of a IEEEtran control entry which can change some IEEEtran.bst
+settings. An entry like this must be cited via \bstctlcite{} command
+before the first real \cite{}. The same entry key cannot be called twice
+(just like multiple \cite{} of the same entry key place only one entry
+in the bibliography.)
+The available control fields are:
+
+CTLuse_article_number
+"no" turns off the display of the number for articles.
+"yes" enables
+
+CTLuse_paper
+"no" turns off the display of the paper and type fields in inproceedings.
+"yes" enables
+
+CTLuse_forced_etal 
+"no" turns off the forced use of "et al."
+"yes" enables
+
+CTLmax_names_forced_etal
+The maximum number of names that can be present beyond which an "et al."
+usage is forced. Be sure that CTLnames_show_etal (below)
+is not greater than this value!
+
+CTLnames_show_etal
+The number of names that will be shown with a forced "et al.".
+Must be less than or equal to CTLmax_names_forced_etal
+
+CTLuse_alt_spacing 
+"no" turns off the alternate interword spacing for entries with URLs.
+"yes" enables
+
+CTLalt_stretch_factor
+If alternate interword spacing for entries with URLs is enabled, this is
+the interword spacing stretch factor that will be used. For example, the
+default "4" here means that the interword spacing in entries with URLs can
+stretch to four times normal. Does not have to be an integer.
+
+CTLdash_repeated_names
+"no" turns off the "dashification" of repeated (i.e., identical to those
+of the previous entry) names. IEEE normally does this.
+"yes" enables
+
+CTLname_format_string
+The name format control string as explained in the BibTeX style hacking
+guide.
+IEEE style "{f.~}{vv~}{ll}{, jj}" is the default,
+
+CTLname_latex_cmd
+A LaTeX command that each name will be fed to (e.g., "\textsc").
+Leave empty if no special font is desired for the names.
+The default is empty.
+
+CTLname_url_prefix
+The prefix text used before URLs.
+The default is "[Online]. Available:" A space will be inserted after this
+text. If this space is not wanted, just use \relax at the end of the
+prefix text.
+
+
+Those fields that are not to be changed can be left out.
+@IEEEtranBSTCTL{IEEEexample:BSTcontrol,
+  CTLuse_article_number     = "yes",
+  CTLuse_paper              = "yes",
+  CTLuse_forced_etal        = "no",
+  CTLmax_names_forced_etal  = "10",
+  CTLnames_show_etal        = "1",
+  CTLuse_alt_spacing        = "yes",
+  CTLalt_stretch_factor     = "4",
+  CTLdash_repeated_names    = "yes",
+  CTLname_format_string     = "{f.~}{vv~}{ll}{, jj}",
+  CTLname_latex_cmd         = "",
+  CTLname_url_prefix        = "[Online]. Available:"
+}
+
+

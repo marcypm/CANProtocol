@@ -1,0 +1,432 @@
+\documentclass[landscape]{article}
+\usepackage{gantt}
+\pagestyle{empty}
+\begin{document}
+\begin{figure}
+\begin{gantt}[fontsize=\scriptsize]{5}{2}
+\begin{ganttitle}
+\numtitle{0}{1}{1}{1}
+\end{ganttitle}
+\ganttbar{  \%W = alloca [64 x i32], align 4}{1}{1}
+\ganttbar{  \%1 = icmp sgt i32 \%numBlocks, 0}{1}{1}
+\ganttcon{2}{2}{1}{3}
+\ganttbar{  \%smax = select i1 \%1, i32 \%numBlocks, i32 0}{1}{1}
+\ganttbar{  br label \%2}{1}{1}
+\end{gantt}
+\end{figure}
+\begin{figure}
+\begin{gantt}[fontsize=\scriptsize]{16}{2}
+\begin{ganttitle}
+\numtitle{0}{1}{1}{1}
+\end{ganttitle}
+\ganttbar{  \%h7.0 = phi i32 [ 1541459225, \%0 ], [ \%114, \%113 ]}{1}{1}
+\ganttbar{  \%h6.0 = phi i32 [ 528734635, \%0 ], [ \%115, \%113 ]}{1}{1}
+\ganttbar{  \%h5.0 = phi i32 [ -1694144372, \%0 ], [ \%116, \%113 ]}{1}{1}
+\ganttbar{  \%h4.0 = phi i32 [ 1359893119, \%0 ], [ \%117, \%113 ]}{1}{1}
+\ganttbar{  \%h3.0 = phi i32 [ -1521486534, \%0 ], [ \%118, \%113 ]}{1}{1}
+\ganttbar{  \%h2.0 = phi i32 [ 1013904242, \%0 ], [ \%119, \%113 ]}{1}{1}
+\ganttbar{  \%h1.0 = phi i32 [ -1150833019, \%0 ], [ \%120, \%113 ]}{1}{1}
+\ganttbar{  \%h0.0 = phi i32 [ 1779033703, \%0 ], [ \%121, \%113 ]}{1}{1}
+\ganttbar{  \%3 = phi i32 [ 0, \%0 ], [ \%122, \%113 ]}{1}{1}
+\ganttcon{2}{9}{1}{14}
+\ganttcon{2}{9}{1}{10}
+\ganttbar{  \%4 = shl i32 \%3, 6}{1}{1}
+\ganttcon{2}{10}{1}{13}
+\ganttcon{2}{10}{1}{12}
+\ganttcon{2}{10}{1}{11}
+\ganttbar{  \%5 = or i32 \%4, 1}{1}{1}
+\ganttbar{  \%6 = or i32 \%4, 2}{1}{1}
+\ganttbar{  \%7 = or i32 \%4, 3}{1}{1}
+\ganttbar{  \%exitcond14 = icmp eq i32 \%3, \%smax}{1}{1}
+\ganttcon{2}{14}{1}{15}
+\ganttbar{  br i1 \%exitcond14, label \%123, label \%8}{1}{1}
+\end{gantt}
+\end{figure}
+\begin{figure}
+\begin{gantt}[fontsize=\scriptsize]{2}{2}
+\begin{ganttitle}
+\numtitle{0}{1}{1}{1}
+\end{ganttitle}
+\ganttbar{  br label \%9}{1}{1}
+\end{gantt}
+\end{figure}
+\begin{figure}
+\begin{gantt}[fontsize=\scriptsize]{5}{2}
+\begin{ganttitle}
+\numtitle{0}{1}{1}{1}
+\end{ganttitle}
+\ganttbar{  \%10 = phi i32 [ 0, \%8 ], [ \%32, \%31 ]}{1}{1}
+\ganttcon{2}{1}{1}{3}
+\ganttcon{2}{1}{1}{2}
+\ganttbar{  \%11 = shl i32 \%10, 2}{1}{1}
+\ganttbar{  \%exitcond = icmp eq i32 \%10, 16}{1}{1}
+\ganttcon{2}{3}{1}{4}
+\ganttbar{  br i1 \%exitcond, label \%33, label \%12}{1}{1}
+\end{gantt}
+\end{figure}
+\begin{figure}
+\begin{gantt}[fontsize=\scriptsize]{26}{7}
+\begin{ganttitle}
+\numtitle{0}{1}{6}{1}
+\end{ganttitle}
+\ganttbar{  \%scevgep = getelementptr [64 x i32]* \%W, i32 0, i32 \%10}{1}{1}
+\ganttcon{2}{1}{5}{25}
+\ganttbar{  \%13 = add i32 \%7, \%11}{1}{1}
+\ganttcon{2}{2}{2}{7}
+\ganttbar{  \%14 = add i32 \%6, \%11}{1}{1}
+\ganttcon{2}{3}{2}{8}
+\ganttbar{  \%15 = add i32 \%5, \%11}{1}{1}
+\ganttcon{2}{4}{2}{9}
+\ganttbar{  \%16 = add i32 \%4, \%11}{1}{1}
+\ganttcon{2}{5}{2}{10}
+\ganttbar{  br label \%31}{1}{1}
+\ganttbar{  \%scevgep1 = getelementptr i8* \%data, i32 \%13}{2}{1}
+\ganttcon{3}{7}{3}{14}
+\ganttbar{  \%scevgep2 = getelementptr i8* \%data, i32 \%14}{2}{1}
+\ganttcon{3}{8}{3}{13}
+\ganttbar{  \%scevgep3 = getelementptr i8* \%data, i32 \%15}{2}{1}
+\ganttcon{3}{9}{2}{12}
+\ganttbar{  \%scevgep4 = getelementptr i8* \%data, i32 \%16}{2}{1}
+\ganttcon{3}{10}{2}{11}
+\ganttbar{  \%17 = load i8* \%scevgep4, align 1}{2}{2}
+\ganttcon{4}{11}{4}{15}
+\ganttbar{  \%20 = load i8* \%scevgep3, align 1}{2}{2}
+\ganttcon{4}{12}{4}{17}
+\ganttbar{  \%24 = load i8* \%scevgep2, align 1}{3}{2}
+\ganttcon{5}{13}{5}{20}
+\ganttbar{  \%28 = load i8* \%scevgep1, align 1}{3}{2}
+\ganttcon{5}{14}{5}{23}
+\ganttbar{  \%18 = zext i8 \%17 to i32}{4}{1}
+\ganttcon{5}{15}{4}{16}
+\ganttbar{  \%19 = shl nuw i32 \%18, 24}{4}{1}
+\ganttcon{5}{16}{4}{19}
+\ganttbar{  \%21 = zext i8 \%20 to i32}{4}{1}
+\ganttcon{5}{17}{4}{18}
+\ganttbar{  \%22 = shl nuw nsw i32 \%21, 16}{4}{1}
+\ganttcon{5}{18}{4}{19}
+\ganttbar{  \%23 = or i32 \%19, \%22}{4}{1}
+\ganttcon{5}{19}{5}{22}
+\ganttbar{  \%25 = zext i8 \%24 to i32}{5}{1}
+\ganttcon{6}{20}{5}{21}
+\ganttbar{  \%26 = shl nuw nsw i32 \%25, 8}{5}{1}
+\ganttcon{6}{21}{5}{22}
+\ganttbar{  \%27 = or i32 \%23, \%26}{5}{1}
+\ganttcon{6}{22}{5}{24}
+\ganttbar{  \%29 = zext i8 \%28 to i32}{5}{1}
+\ganttcon{6}{23}{5}{24}
+\ganttbar{  \%30 = or i32 \%27, \%29}{5}{1}
+\ganttcon{6}{24}{5}{25}
+\ganttbar{  store i32 \%30, i32* \%scevgep, align 4}{5}{1}
+\end{gantt}
+\end{figure}
+\begin{figure}
+\begin{gantt}[fontsize=\scriptsize]{3}{2}
+\begin{ganttitle}
+\numtitle{0}{1}{1}{1}
+\end{ganttitle}
+\ganttbar{  \%32 = add nsw i32 \%10, 1}{1}{1}
+\ganttbar{  br label \%9}{1}{1}
+\end{gantt}
+\end{figure}
+\begin{figure}
+\begin{gantt}[fontsize=\scriptsize]{2}{2}
+\begin{ganttitle}
+\numtitle{0}{1}{1}{1}
+\end{ganttitle}
+\ganttbar{  br label \%34}{1}{1}
+\end{gantt}
+\end{figure}
+\begin{figure}
+\begin{gantt}[fontsize=\scriptsize]{8}{3}
+\begin{ganttitle}
+\numtitle{0}{1}{2}{1}
+\end{ganttitle}
+\ganttbar{  \%indvar = phi i32 [ \%indvar.next, \%66 ], [ 0, \%33 ]}{1}{1}
+\ganttcon{2}{1}{1}{4}
+\ganttcon{2}{1}{1}{3}
+\ganttcon{2}{1}{1}{2}
+\ganttbar{  \%35 = add i32 \%indvar, 1}{1}{1}
+\ganttcon{2}{2}{2}{6}
+\ganttbar{  \%36 = add i32 \%indvar, 14}{1}{1}
+\ganttcon{2}{3}{2}{7}
+\ganttbar{  \%exitcond5 = icmp eq i32 \%indvar, 48}{1}{1}
+\ganttcon{2}{4}{1}{5}
+\ganttbar{  br i1 \%exitcond5, label \%67, label \%37}{1}{1}
+\ganttbar{  \%scevgep8 = getelementptr [64 x i32]* \%W, i32 0, i32 \%35}{2}{1}
+\ganttbar{  \%scevgep10 = getelementptr [64 x i32]* \%W, i32 0, i32 \%36}{2}{1}
+\end{gantt}
+\end{figure}
+\begin{figure}
+\begin{gantt}[fontsize=\scriptsize]{35}{7}
+\begin{ganttitle}
+\numtitle{0}{1}{6}{1}
+\end{ganttitle}
+\ganttbar{  \%38 = add i32 \%indvar, 9}{1}{1}
+\ganttcon{2}{1}{2}{7}
+\ganttbar{  \%scevgep7 = getelementptr [64 x i32]* \%W, i32 0, i32 \%indvar}{1}{1}
+\ganttcon{2}{2}{3}{21}
+\ganttbar{  \%t.1 = add i32 \%indvar, 16}{1}{1}
+\ganttcon{2}{3}{2}{8}
+\ganttbar{  \%39 = load i32* \%scevgep10, align 4}{1}{2}
+\ganttcon{3}{4}{3}{15}
+\ganttcon{3}{4}{3}{14}
+\ganttcon{3}{4}{3}{12}
+\ganttcon{3}{4}{3}{11}
+\ganttbar{  \%47 = load i32* \%scevgep10, align 4}{1}{2}
+\ganttcon{3}{5}{3}{18}
+\ganttbar{  br label \%66}{1}{1}
+\ganttbar{  \%scevgep9 = getelementptr [64 x i32]* \%W, i32 0, i32 \%38}{2}{1}
+\ganttcon{3}{7}{3}{20}
+\ganttbar{  \%scevgep6 = getelementptr [64 x i32]* \%W, i32 0, i32 \%t.1}{2}{1}
+\ganttcon{3}{8}{5}{34}
+\ganttbar{  \%52 = load i32* \%scevgep8, align 4}{2}{2}
+\ganttcon{4}{9}{4}{26}
+\ganttcon{4}{9}{4}{25}
+\ganttcon{4}{9}{4}{23}
+\ganttcon{4}{9}{4}{22}
+\ganttbar{  \%60 = load i32* \%scevgep8, align 4}{2}{2}
+\ganttcon{4}{10}{4}{29}
+\ganttbar{  \%40 = lshr i32 \%39, 17}{3}{1}
+\ganttcon{4}{11}{3}{13}
+\ganttbar{  \%41 = shl i32 \%39, 15}{3}{1}
+\ganttcon{4}{12}{3}{13}
+\ganttbar{  \%42 = or i32 \%40, \%41}{3}{1}
+\ganttcon{4}{13}{3}{17}
+\ganttbar{  \%43 = lshr i32 \%39, 19}{3}{1}
+\ganttcon{4}{14}{3}{16}
+\ganttbar{  \%44 = shl i32 \%39, 13}{3}{1}
+\ganttcon{4}{15}{3}{16}
+\ganttbar{  \%45 = or i32 \%43, \%44}{3}{1}
+\ganttcon{4}{16}{3}{17}
+\ganttbar{  \%46 = xor i32 \%42, \%45}{3}{1}
+\ganttcon{4}{17}{3}{19}
+\ganttbar{  \%48 = lshr i32 \%47, 10}{3}{1}
+\ganttcon{4}{18}{3}{19}
+\ganttbar{  \%49 = xor i32 \%46, \%48}{3}{1}
+\ganttcon{4}{19}{5}{31}
+\ganttbar{  \%50 = load i32* \%scevgep9, align 4}{3}{2}
+\ganttcon{5}{20}{5}{31}
+\ganttbar{  \%64 = load i32* \%scevgep7, align 4}{3}{2}
+\ganttcon{5}{21}{5}{33}
+\ganttbar{  \%53 = lshr i32 \%52, 7}{4}{1}
+\ganttcon{5}{22}{4}{24}
+\ganttbar{  \%54 = shl i32 \%52, 25}{4}{1}
+\ganttcon{5}{23}{4}{24}
+\ganttbar{  \%55 = or i32 \%53, \%54}{4}{1}
+\ganttcon{5}{24}{4}{28}
+\ganttbar{  \%56 = lshr i32 \%52, 18}{4}{1}
+\ganttcon{5}{25}{4}{27}
+\ganttbar{  \%57 = shl i32 \%52, 14}{4}{1}
+\ganttcon{5}{26}{4}{27}
+\ganttbar{  \%58 = or i32 \%56, \%57}{4}{1}
+\ganttcon{5}{27}{4}{28}
+\ganttbar{  \%59 = xor i32 \%55, \%58}{4}{1}
+\ganttcon{5}{28}{4}{30}
+\ganttbar{  \%61 = lshr i32 \%60, 3}{4}{1}
+\ganttcon{5}{29}{4}{30}
+\ganttbar{  \%62 = xor i32 \%59, \%61}{4}{1}
+\ganttcon{5}{30}{5}{32}
+\ganttbar{  \%51 = add i32 \%49, \%50}{5}{1}
+\ganttcon{6}{31}{5}{32}
+\ganttbar{  \%63 = add i32 \%51, \%62}{5}{1}
+\ganttcon{6}{32}{5}{33}
+\ganttbar{  \%65 = add i32 \%63, \%64}{5}{1}
+\ganttcon{6}{33}{5}{34}
+\ganttbar{  store i32 \%65, i32* \%scevgep6, align 4}{5}{1}
+\end{gantt}
+\end{figure}
+\begin{figure}
+\begin{gantt}[fontsize=\scriptsize]{3}{2}
+\begin{ganttitle}
+\numtitle{0}{1}{1}{1}
+\end{ganttitle}
+\ganttbar{  \%indvar.next = add i32 \%indvar, 1}{1}{1}
+\ganttbar{  br label \%34}{1}{1}
+\end{gantt}
+\end{figure}
+\begin{figure}
+\begin{gantt}[fontsize=\scriptsize]{2}{2}
+\begin{ganttitle}
+\numtitle{0}{1}{1}{1}
+\end{ganttitle}
+\ganttbar{  br label \%68}{1}{1}
+\end{gantt}
+\end{figure}
+\begin{figure}
+\begin{gantt}[fontsize=\scriptsize]{12}{2}
+\begin{ganttitle}
+\numtitle{0}{1}{1}{1}
+\end{ganttitle}
+\ganttbar{  \%h.0 = phi i32 [ \%h7.0, \%67 ], [ \%g.0, \%92 ]}{1}{1}
+\ganttbar{  \%g.0 = phi i32 [ \%h6.0, \%67 ], [ \%f.0, \%92 ]}{1}{1}
+\ganttcon{2}{2}{1}{1}
+\ganttbar{  \%f.0 = phi i32 [ \%h5.0, \%67 ], [ \%e.0, \%92 ]}{1}{1}
+\ganttcon{2}{3}{1}{2}
+\ganttbar{  \%e.0 = phi i32 [ \%h4.0, \%67 ], [ \%110, \%92 ]}{1}{1}
+\ganttcon{2}{4}{1}{3}
+\ganttbar{  \%d.0 = phi i32 [ \%h3.0, \%67 ], [ \%c.0, \%92 ]}{1}{1}
+\ganttbar{  \%c.0 = phi i32 [ \%h2.0, \%67 ], [ \%b.0, \%92 ]}{1}{1}
+\ganttcon{2}{6}{1}{5}
+\ganttbar{  \%b.0 = phi i32 [ \%h1.0, \%67 ], [ \%a.0, \%92 ]}{1}{1}
+\ganttcon{2}{7}{1}{6}
+\ganttbar{  \%a.0 = phi i32 [ \%h0.0, \%67 ], [ \%109, \%92 ]}{1}{1}
+\ganttcon{2}{8}{1}{7}
+\ganttbar{  \%69 = phi i32 [ 0, \%67 ], [ \%111, \%92 ]}{1}{1}
+\ganttcon{2}{9}{1}{10}
+\ganttbar{  \%exitcond11 = icmp eq i32 \%69, 64}{1}{1}
+\ganttcon{2}{10}{1}{11}
+\ganttbar{  br i1 \%exitcond11, label \%112, label \%70}{1}{1}
+\end{gantt}
+\end{figure}
+\begin{figure}
+\begin{gantt}[fontsize=\scriptsize]{25}{4}
+\begin{ganttitle}
+\numtitle{0}{1}{3}{1}
+\end{ganttitle}
+\ganttbar{  \%scevgep13 = getelementptr [64 x i32]* @k, i32 0, i32 \%69}{1}{1}
+\ganttcon{2}{1}{1}{20}
+\ganttbar{  \%scevgep12 = getelementptr [64 x i32]* \%W, i32 0, i32 \%69}{1}{1}
+\ganttcon{2}{2}{1}{21}
+\ganttbar{  \%71 = lshr i32 \%e.0, 6}{1}{1}
+\ganttcon{2}{3}{1}{5}
+\ganttbar{  \%72 = shl i32 \%e.0, 26}{1}{1}
+\ganttcon{2}{4}{1}{5}
+\ganttbar{  \%73 = or i32 \%71, \%72}{1}{1}
+\ganttcon{2}{5}{1}{9}
+\ganttbar{  \%74 = lshr i32 \%e.0, 11}{1}{1}
+\ganttcon{2}{6}{1}{8}
+\ganttbar{  \%75 = shl i32 \%e.0, 21}{1}{1}
+\ganttcon{2}{7}{1}{8}
+\ganttbar{  \%76 = or i32 \%74, \%75}{1}{1}
+\ganttcon{2}{8}{1}{9}
+\ganttbar{  \%77 = xor i32 \%73, \%76}{1}{1}
+\ganttcon{2}{9}{1}{13}
+\ganttbar{  \%78 = lshr i32 \%e.0, 25}{1}{1}
+\ganttcon{2}{10}{1}{12}
+\ganttbar{  \%79 = shl i32 \%e.0, 7}{1}{1}
+\ganttcon{2}{11}{1}{12}
+\ganttbar{  \%80 = or i32 \%78, \%79}{1}{1}
+\ganttcon{2}{12}{1}{13}
+\ganttbar{  \%81 = xor i32 \%77, \%80}{1}{1}
+\ganttcon{2}{13}{1}{14}
+\ganttbar{  \%82 = add i32 \%h.0, \%81}{1}{1}
+\ganttcon{2}{14}{1}{19}
+\ganttbar{  \%83 = and i32 \%e.0, \%f.0}{1}{1}
+\ganttcon{2}{15}{1}{18}
+\ganttbar{  \%84 = xor i32 \%e.0, -1}{1}{1}
+\ganttcon{2}{16}{1}{17}
+\ganttbar{  \%85 = and i32 \%g.0, \%84}{1}{1}
+\ganttcon{2}{17}{1}{18}
+\ganttbar{  \%86 = xor i32 \%83, \%85}{1}{1}
+\ganttcon{2}{18}{1}{19}
+\ganttbar{  \%87 = add i32 \%82, \%86}{1}{1}
+\ganttcon{2}{19}{3}{23}
+\ganttbar{  \%88 = load i32* \%scevgep13, align 4}{1}{2}
+\ganttcon{3}{20}{3}{23}
+\ganttbar{  \%90 = load i32* \%scevgep12, align 4}{1}{2}
+\ganttcon{3}{21}{3}{24}
+\ganttbar{  br label \%92}{1}{1}
+\ganttbar{  \%89 = add i32 \%87, \%88}{3}{1}
+\ganttcon{4}{23}{3}{24}
+\ganttbar{  \%91 = add i32 \%89, \%90}{3}{1}
+\end{gantt}
+\end{figure}
+\begin{figure}
+\begin{gantt}[fontsize=\scriptsize]{21}{2}
+\begin{ganttitle}
+\numtitle{0}{1}{1}{1}
+\end{ganttitle}
+\ganttbar{  \%93 = lshr i32 \%a.0, 2}{1}{1}
+\ganttcon{2}{1}{1}{3}
+\ganttbar{  \%94 = shl i32 \%a.0, 30}{1}{1}
+\ganttcon{2}{2}{1}{3}
+\ganttbar{  \%95 = or i32 \%93, \%94}{1}{1}
+\ganttcon{2}{3}{1}{7}
+\ganttbar{  \%96 = lshr i32 \%a.0, 13}{1}{1}
+\ganttcon{2}{4}{1}{6}
+\ganttbar{  \%97 = shl i32 \%a.0, 19}{1}{1}
+\ganttcon{2}{5}{1}{6}
+\ganttbar{  \%98 = or i32 \%96, \%97}{1}{1}
+\ganttcon{2}{6}{1}{7}
+\ganttbar{  \%99 = xor i32 \%95, \%98}{1}{1}
+\ganttcon{2}{7}{1}{11}
+\ganttbar{  \%100 = lshr i32 \%a.0, 22}{1}{1}
+\ganttcon{2}{8}{1}{10}
+\ganttbar{  \%101 = shl i32 \%a.0, 10}{1}{1}
+\ganttcon{2}{9}{1}{10}
+\ganttbar{  \%102 = or i32 \%100, \%101}{1}{1}
+\ganttcon{2}{10}{1}{11}
+\ganttbar{  \%103 = xor i32 \%99, \%102}{1}{1}
+\ganttcon{2}{11}{1}{16}
+\ganttbar{  \%104 = xor i32 \%b.0, \%c.0}{1}{1}
+\ganttcon{2}{12}{1}{13}
+\ganttbar{  \%105 = and i32 \%a.0, \%104}{1}{1}
+\ganttcon{2}{13}{1}{15}
+\ganttbar{  \%106 = and i32 \%b.0, \%c.0}{1}{1}
+\ganttcon{2}{14}{1}{15}
+\ganttbar{  \%107 = xor i32 \%105, \%106}{1}{1}
+\ganttcon{2}{15}{1}{16}
+\ganttbar{  \%108 = add i32 \%103, \%107}{1}{1}
+\ganttcon{2}{16}{1}{17}
+\ganttbar{  \%109 = add i32 \%91, \%108}{1}{1}
+\ganttbar{  \%110 = add i32 \%d.0, \%91}{1}{1}
+\ganttbar{  \%111 = add nsw i32 \%69, 1}{1}{1}
+\ganttbar{  br label \%68}{1}{1}
+\end{gantt}
+\end{figure}
+\begin{figure}
+\begin{gantt}[fontsize=\scriptsize]{2}{2}
+\begin{ganttitle}
+\numtitle{0}{1}{1}{1}
+\end{ganttitle}
+\ganttbar{  br label \%113}{1}{1}
+\end{gantt}
+\end{figure}
+\begin{figure}
+\begin{gantt}[fontsize=\scriptsize]{11}{2}
+\begin{ganttitle}
+\numtitle{0}{1}{1}{1}
+\end{ganttitle}
+\ganttbar{  \%114 = add i32 \%h.0, \%h7.0}{1}{1}
+\ganttbar{  \%115 = add i32 \%g.0, \%h6.0}{1}{1}
+\ganttbar{  \%116 = add i32 \%f.0, \%h5.0}{1}{1}
+\ganttbar{  \%117 = add i32 \%e.0, \%h4.0}{1}{1}
+\ganttbar{  \%118 = add i32 \%d.0, \%h3.0}{1}{1}
+\ganttbar{  \%119 = add i32 \%c.0, \%h2.0}{1}{1}
+\ganttbar{  \%120 = add i32 \%b.0, \%h1.0}{1}{1}
+\ganttbar{  \%121 = add i32 \%a.0, \%h0.0}{1}{1}
+\ganttbar{  \%122 = add nsw i32 \%3, 1}{1}{1}
+\ganttbar{  br label \%2}{1}{1}
+\end{gantt}
+\end{figure}
+\begin{figure}
+\begin{gantt}[fontsize=\scriptsize]{17}{6}
+\begin{ganttitle}
+\numtitle{0}{1}{5}{1}
+\end{ganttitle}
+\ganttbar{  store i32 \%h0.0, i32* \%digest, align 4}{1}{1}
+\ganttbar{  \%124 = getelementptr inbounds i32* \%digest, i32 1}{1}{1}
+\ganttcon{2}{2}{1}{3}
+\ganttbar{  store i32 \%h1.0, i32* \%124, align 4}{1}{1}
+\ganttbar{  \%125 = getelementptr inbounds i32* \%digest, i32 2}{1}{1}
+\ganttcon{2}{4}{2}{10}
+\ganttbar{  \%126 = getelementptr inbounds i32* \%digest, i32 3}{1}{1}
+\ganttcon{2}{5}{2}{11}
+\ganttbar{  \%127 = getelementptr inbounds i32* \%digest, i32 4}{1}{1}
+\ganttcon{2}{6}{3}{12}
+\ganttbar{  \%128 = getelementptr inbounds i32* \%digest, i32 5}{1}{1}
+\ganttcon{2}{7}{3}{13}
+\ganttbar{  \%129 = getelementptr inbounds i32* \%digest, i32 6}{1}{1}
+\ganttcon{2}{8}{4}{14}
+\ganttbar{  \%130 = getelementptr inbounds i32* \%digest, i32 7}{1}{1}
+\ganttcon{2}{9}{4}{15}
+\ganttbar{  store i32 \%h2.0, i32* \%125, align 4}{2}{1}
+\ganttbar{  store i32 \%h3.0, i32* \%126, align 4}{2}{1}
+\ganttbar{  store i32 \%h4.0, i32* \%127, align 4}{3}{1}
+\ganttbar{  store i32 \%h5.0, i32* \%128, align 4}{3}{1}
+\ganttbar{  store i32 \%h6.0, i32* \%129, align 4}{4}{1}
+\ganttbar{  store i32 \%h7.0, i32* \%130, align 4}{4}{1}
+\ganttbar{  ret void}{5}{1}
+\end{gantt}
+\end{figure}
+\end{document}

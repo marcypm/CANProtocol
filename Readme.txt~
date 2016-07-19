@@ -1,0 +1,11 @@
+Readme
+=======
+Folders:
+	ccode: contains all the c code
+		
+	reports: contains all the sysntesis reports and simulations by quartus
+
+	tex: contains all the written work
+
+	verilog: contains all the verilog files for the hardware implementation
+

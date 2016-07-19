@@ -1,0 +1,15 @@
+Depth = 8;
+Width = 32;
+Address_radix = dec;
+Data_radix = hex;
+Content
+Begin
+0: 00000000;	-- gDigest[0] = 0
+1: 00000000;	-- gDigest[1] = 0
+2: 00000000;	-- gDigest[2] = 0
+3: 00000000;	-- gDigest[3] = 0
+4: 00000000;	-- gDigest[4] = 0
+5: 00000000;	-- gDigest[5] = 0
+6: 00000000;	-- gDigest[6] = 0
+7: 00000000;	-- gDigest[7] = 0
+End;

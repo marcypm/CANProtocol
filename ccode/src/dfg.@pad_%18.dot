@@ -1,0 +1,34 @@
+digraph {
+Node0x36ea750[label="  %19 = shl i64 %msgLen, 3"];
+Node0x36ea750 -> Node0x36ea750[label="D:0.00ns L:0",color=blue];
+Node0x36ea830[label="  %20 = lshr i64 %msgLen, 21"];
+Node0x36ea830 -> Node0x36ea830[label="D:0.00ns L:0",color=blue];
+Node0x36ea910[label="  %21 = trunc i64 %20 to i8"];
+Node0x36ea910 -> Node0x36ea910[label="D:0.00ns L:0",color=blue];
+Node0x36ea9f0[label="  %22 = add nsw i32 %i.1.in, -3"];
+Node0x36ea9f0 -> Node0x36ea9f0[label="D:2.50ns L:0",color=blue];
+Node0x36eaad0[label="  %23 = getelementptr inbounds i8* %data..."];
+Node0x36eaad0 -> Node0x36eaad0[label="D:10.00ns L:0",color=blue];
+Node0x36eac90[label="  %24 = lshr i64 %msgLen, 13"];
+Node0x36eac90 -> Node0x36eac90[label="D:0.00ns L:0",color=blue];
+Node0x36ead70[label="  %25 = trunc i64 %24 to i8"];
+Node0x36ead70 -> Node0x36ead70[label="D:0.00ns L:0",color=blue];
+Node0x36eae50[label="  %26 = add nsw i32 %i.1.in, -2"];
+Node0x36eae50 -> Node0x36eae50[label="D:2.50ns L:0",color=blue];
+Node0x36eaf30[label="  %27 = getelementptr inbounds i8* %data..."];
+Node0x36eaf30 -> Node0x36eaf30[label="D:10.00ns L:0",color=blue];
+Node0x36eb0f0[label="  %28 = lshr i64 %msgLen, 5"];
+Node0x36eb0f0 -> Node0x36eb0f0[label="D:0.00ns L:0",color=blue];
+Node0x36eb1d0[label="  %29 = trunc i64 %28 to i8"];
+Node0x36eb1d0 -> Node0x36eb1d0[label="D:0.00ns L:0",color=blue];
+Node0x36eb2b0[label="  %30 = add nsw i32 %i.1.in, -1"];
+Node0x36eb2b0 -> Node0x36eb2b0[label="D:2.50ns L:0",color=blue];
+Node0x36eb390[label="  %31 = getelementptr inbounds i8* %data..."];
+Node0x36eb390 -> Node0x36eb390[label="D:10.00ns L:0",color=blue];
+Node0x36eb550[label="  %32 = trunc i64 %19 to i8"];
+Node0x36eb550 -> Node0x36eb550[label="D:0.00ns L:0",color=blue];
+Node0x36eb630[label="  %33 = getelementptr inbounds i8* %data..."];
+Node0x36eb630 -> Node0x36eb630[label="D:10.00ns L:0",color=blue];
+Node0x36e88d0[label="  %34 = sdiv i32 %i.1.in, 64"];
+Node0x36e88d0 -> Node0x36e88d0[label="D:10.00ns L:32",color=blue];
+}

@@ -1,0 +1,175 @@
+vlog -v /opt/legup/legup-4.0/examples/../ip/libs/altera/220model.v -v /opt/legup/legup-4.0/examples/../ip/libs/altera/altera_mf.v -v /opt/legup/legup-4.0/examples/../ip/libs/altera/altera_primitives.v -v /opt/legup/legup-4.0/examples/../ip/libs/altera/altfp_adder_14.v -v /opt/legup/legup-4.0/examples/../ip/libs/altera/altfp_adder64_14.v -v /opt/legup/legup-4.0/examples/../ip/libs/altera/altfp_subtractor_14.v -v /opt/legup/legup-4.0/examples/../ip/libs/altera/altfp_subtractor64_14.v -v /opt/legup/legup-4.0/examples/../ip/libs/altera/altfp_multiplier_11.v -v /opt/legup/legup-4.0/examples/../ip/libs/altera/altfp_multiplier64_11.v -v /opt/legup/legup-4.0/examples/../ip/libs/altera/altfp_divider_33.v -v /opt/legup/legup-4.0/examples/../ip/libs/altera/altfp_divider64_61.v -v /opt/legup/legup-4.0/examples/../ip/libs/altera/altfp_compare32_1.v -v /opt/legup/legup-4.0/examples/../ip/libs/altera/altfp_compare64_1.v -v /opt/legup/legup-4.0/examples/../ip/libs/altera/altfp_truncate_3.v -v /opt/legup/legup-4.0/examples/../ip/libs/altera/altfp_extend_2.v -v /opt/legup/legup-4.0/examples/../ip/libs/altera/altfp_sitofp32_6.v -v /opt/legup/legup-4.0/examples/../ip/libs/altera/altfp_sitofp64_6.v -v /opt/legup/legup-4.0/examples/../ip/libs/altera/altfp_fptosi32_6.v -v /opt/legup/legup-4.0/examples/../ip/libs/altera/altfp_fptosi64_6.v -v /opt/legup/legup-4.0/examples/../ip/libs/altera/altfp_adder_13.v -v /opt/legup/legup-4.0/examples/../ip/libs/altera/altfp_adder64_13.v -v /opt/legup/legup-4.0/examples/../ip/libs/altera/sgate.v -v /opt/legup/legup-4.0/examples/../ip/libs/generic/div_unsigned.v -v /opt/legup/legup-4.0/examples/../ip/libs/generic/div_signed.v -v /opt/legup/legup-4.0/examples/../ip/libs/altera/cyclonev_atoms.v -v /opt/legup/legup-4.0/examples/../ip/libs/altera/cyclonev_hssi_atoms.v -v /opt/legup/legup-4.0/examples/../ip/libs/altera/cyclonev_pcie_hip_atoms.v sha256.v
+Model Technology ModelSim ALTERA vlog 10.3d Compiler 2014.10 Oct  7 2014
+Start time: 11:25:07 on Dec 14,2015
+vlog -v /opt/legup/legup-4.0/examples/../ip/libs/altera/220model.v -v /opt/legup/legup-4.0/examples/../ip/libs/altera/altera_mf.v -v /opt/legup/legup-4.0/examples/../ip/libs/altera/altera_primitives.v -v /opt/legup/legup-4.0/examples/../ip/libs/altera/altfp_adder_14.v -v /opt/legup/legup-4.0/examples/../ip/libs/altera/altfp_adder64_14.v -v /opt/legup/legup-4.0/examples/../ip/libs/altera/altfp_subtractor_14.v -v /opt/legup/legup-4.0/examples/../ip/libs/altera/altfp_subtractor64_14.v -v /opt/legup/legup-4.0/examples/../ip/libs/altera/altfp_multiplier_11.v -v /opt/legup/legup-4.0/examples/../ip/libs/altera/altfp_multiplier64_11.v -v /opt/legup/legup-4.0/examples/../ip/libs/altera/altfp_divider_33.v -v /opt/legup/legup-4.0/examples/../ip/libs/altera/altfp_divider64_61.v -v /opt/legup/legup-4.0/examples/../ip/libs/altera/altfp_compare32_1.v -v /opt/legup/legup-4.0/examples/../ip/libs/altera/altfp_compare64_1.v -v /opt/legup/legup-4.0/examples/../ip/libs/altera/altfp_truncate_3.v -v /opt/legup/legup-4.0/examples/../ip/libs/altera/altfp_extend_2.v -v /opt/legup/legup-4.0/examples/../ip/libs/altera/altfp_sitofp32_6.v -v /opt/legup/legup-4.0/examples/../ip/libs/altera/altfp_sitofp64_6.v -v /opt/legup/legup-4.0/examples/../ip/libs/altera/altfp_fptosi32_6.v -v /opt/legup/legup-4.0/examples/../ip/libs/altera/altfp_fptosi64_6.v -v /opt/legup/legup-4.0/examples/../ip/libs/altera/altfp_adder_13.v -v /opt/legup/legup-4.0/examples/../ip/libs/altera/altfp_adder64_13.v -v /opt/legup/legup-4.0/examples/../ip/libs/altera/sgate.v -v /opt/legup/legup-4.0/examples/../ip/libs/generic/div_unsigned.v -v /opt/legup/legup-4.0/examples/../ip/libs/generic/div_signed.v -v /opt/legup/legup-4.0/examples/../ip/libs/altera/cyclonev_atoms.v -v /opt/legup/legup-4.0/examples/../ip/libs/altera/cyclonev_hssi_atoms.v -v /opt/legup/legup-4.0/examples/../ip/libs/altera/cyclonev_pcie_hip_atoms.v sha256.v 
+-- Compiling module top
+-- Compiling module memory_controller
+-- Compiling module pad
+-- Compiling module outerloop
+-- Compiling module SHA256
+-- Compiling module legup_memcpy_1
+-- Compiling module main
+-- Compiling module ram_dual_port
+-- Compiling module rom_dual_port
+-- Compiling module ML605
+-- Compiling module de4
+-- Compiling module de2
+-- Compiling module circuit_start_control
+-- Compiling module hex_digits
+-- Compiling module main_tb
+-- Scanning library file '/opt/legup/legup-4.0/examples/../ip/libs/altera/220model.v'
+-- Compiling module lpm_divide
+-- Scanning library file '/opt/legup/legup-4.0/examples/../ip/libs/altera/altera_mf.v'
+-- Compiling module ALTERA_MF_MEMORY_INITIALIZATION
+-- Scanning library file '/opt/legup/legup-4.0/examples/../ip/libs/altera/altera_primitives.v'
+-- Scanning library file '/opt/legup/legup-4.0/examples/../ip/libs/altera/altfp_adder_14.v'
+-- Scanning library file '/opt/legup/legup-4.0/examples/../ip/libs/altera/altfp_adder64_14.v'
+-- Scanning library file '/opt/legup/legup-4.0/examples/../ip/libs/altera/altfp_subtractor_14.v'
+-- Scanning library file '/opt/legup/legup-4.0/examples/../ip/libs/altera/altfp_subtractor64_14.v'
+-- Scanning library file '/opt/legup/legup-4.0/examples/../ip/libs/altera/altfp_multiplier_11.v'
+-- Scanning library file '/opt/legup/legup-4.0/examples/../ip/libs/altera/altfp_multiplier64_11.v'
+-- Scanning library file '/opt/legup/legup-4.0/examples/../ip/libs/altera/altfp_divider_33.v'
+-- Scanning library file '/opt/legup/legup-4.0/examples/../ip/libs/altera/altfp_divider64_61.v'
+-- Scanning library file '/opt/legup/legup-4.0/examples/../ip/libs/altera/altfp_compare32_1.v'
+-- Scanning library file '/opt/legup/legup-4.0/examples/../ip/libs/altera/altfp_compare64_1.v'
+-- Scanning library file '/opt/legup/legup-4.0/examples/../ip/libs/altera/altfp_truncate_3.v'
+-- Scanning library file '/opt/legup/legup-4.0/examples/../ip/libs/altera/altfp_extend_2.v'
+-- Scanning library file '/opt/legup/legup-4.0/examples/../ip/libs/altera/altfp_sitofp32_6.v'
+-- Scanning library file '/opt/legup/legup-4.0/examples/../ip/libs/altera/altfp_sitofp64_6.v'
+-- Scanning library file '/opt/legup/legup-4.0/examples/../ip/libs/altera/altfp_fptosi32_6.v'
+-- Scanning library file '/opt/legup/legup-4.0/examples/../ip/libs/altera/altfp_fptosi64_6.v'
+-- Scanning library file '/opt/legup/legup-4.0/examples/../ip/libs/altera/altfp_adder_13.v'
+-- Scanning library file '/opt/legup/legup-4.0/examples/../ip/libs/altera/altfp_adder64_13.v'
+-- Scanning library file '/opt/legup/legup-4.0/examples/../ip/libs/altera/sgate.v'
+-- Scanning library file '/opt/legup/legup-4.0/examples/../ip/libs/generic/div_unsigned.v'
+-- Scanning library file '/opt/legup/legup-4.0/examples/../ip/libs/generic/div_signed.v'
+-- Scanning library file '/opt/legup/legup-4.0/examples/../ip/libs/altera/cyclonev_atoms.v'
+-- Scanning library file '/opt/legup/legup-4.0/examples/../ip/libs/altera/cyclonev_hssi_atoms.v'
+-- Scanning library file '/opt/legup/legup-4.0/examples/../ip/libs/altera/cyclonev_pcie_hip_atoms.v'
+-- Scanning library file '/opt/legup/legup-4.0/examples/../ip/libs/altera/220model.v'
+-- Compiling module LPM_HINT_EVALUATION
+-- Scanning library file '/opt/legup/legup-4.0/examples/../ip/libs/altera/altera_mf.v'
+-- Scanning library file '/opt/legup/legup-4.0/examples/../ip/libs/altera/altera_primitives.v'
+-- Scanning library file '/opt/legup/legup-4.0/examples/../ip/libs/altera/altfp_adder_14.v'
+-- Scanning library file '/opt/legup/legup-4.0/examples/../ip/libs/altera/altfp_adder64_14.v'
+-- Scanning library file '/opt/legup/legup-4.0/examples/../ip/libs/altera/altfp_subtractor_14.v'
+-- Scanning library file '/opt/legup/legup-4.0/examples/../ip/libs/altera/altfp_subtractor64_14.v'
+-- Scanning library file '/opt/legup/legup-4.0/examples/../ip/libs/altera/altfp_multiplier_11.v'
+-- Scanning library file '/opt/legup/legup-4.0/examples/../ip/libs/altera/altfp_multiplier64_11.v'
+-- Scanning library file '/opt/legup/legup-4.0/examples/../ip/libs/altera/altfp_divider_33.v'
+-- Scanning library file '/opt/legup/legup-4.0/examples/../ip/libs/altera/altfp_divider64_61.v'
+-- Scanning library file '/opt/legup/legup-4.0/examples/../ip/libs/altera/altfp_compare32_1.v'
+-- Scanning library file '/opt/legup/legup-4.0/examples/../ip/libs/altera/altfp_compare64_1.v'
+-- Scanning library file '/opt/legup/legup-4.0/examples/../ip/libs/altera/altfp_truncate_3.v'
+-- Scanning library file '/opt/legup/legup-4.0/examples/../ip/libs/altera/altfp_extend_2.v'
+-- Scanning library file '/opt/legup/legup-4.0/examples/../ip/libs/altera/altfp_sitofp32_6.v'
+-- Scanning library file '/opt/legup/legup-4.0/examples/../ip/libs/altera/altfp_sitofp64_6.v'
+-- Scanning library file '/opt/legup/legup-4.0/examples/../ip/libs/altera/altfp_fptosi32_6.v'
+-- Scanning library file '/opt/legup/legup-4.0/examples/../ip/libs/altera/altfp_fptosi64_6.v'
+-- Scanning library file '/opt/legup/legup-4.0/examples/../ip/libs/altera/altfp_adder_13.v'
+-- Scanning library file '/opt/legup/legup-4.0/examples/../ip/libs/altera/altfp_adder64_13.v'
+-- Scanning library file '/opt/legup/legup-4.0/examples/../ip/libs/altera/sgate.v'
+-- Scanning library file '/opt/legup/legup-4.0/examples/../ip/libs/generic/div_unsigned.v'
+-- Scanning library file '/opt/legup/legup-4.0/examples/../ip/libs/generic/div_signed.v'
+-- Scanning library file '/opt/legup/legup-4.0/examples/../ip/libs/altera/cyclonev_atoms.v'
+-- Scanning library file '/opt/legup/legup-4.0/examples/../ip/libs/altera/cyclonev_hssi_atoms.v'
+-- Scanning library file '/opt/legup/legup-4.0/examples/../ip/libs/altera/cyclonev_pcie_hip_atoms.v'
+
+Top level modules:
+	ML605
+	de4
+	circuit_start_control
+	main_tb
+End time: 11:25:09 on Dec 14,2015, Elapsed time: 0:00:02
+Errors: 0, Warnings: 0
+vlog -sv /opt/legup/legup-4.0/examples/../ip/libs/altera/altera_lnsim.sv -sv /opt/legup/legup-4.0/examples/../ip/libs/altera/cyclonev_hps_atoms.sv
+Model Technology ModelSim ALTERA vlog 10.3d Compiler 2014.10 Oct  7 2014
+Start time: 11:25:09 on Dec 14,2015
+vlog -sv /opt/legup/legup-4.0/examples/../ip/libs/altera/altera_lnsim.sv -sv /opt/legup/legup-4.0/examples/../ip/libs/altera/cyclonev_hps_atoms.sv 
+-- Compiling package altera_lnsim_functions
+-- Compiling module altera_pll
+-- Importing package altera_lnsim_functions
+-- Compiling module dps_extra_kick
+-- Compiling module dprio_init
+-- Compiling module pll_dps_lcell_comb
+-- Compiling module altera_stratixv_pll
+-- Compiling module altera_arriav_pll
+-- Compiling module altera_arriavgz_pll
+-- Compiling module altera_cyclonev_pll
+-- Compiling package altera_generic_pll_functions
+-- Compiling module generic_pll
+-- Importing package altera_generic_pll_functions
+-- Compiling module generic_cdr
+-- Compiling module common_28nm_ram_pulse_generator
+-- Compiling module common_28nm_ram_register
+-- Compiling module common_28nm_ram_block
+-- Compiling module generic_m20k
+-- Compiling module generic_m10k
+-- Compiling module common_28nm_mlab_cell_pulse_generator
+-- Compiling module common_28nm_mlab_latch
+-- Compiling module common_28nm_mlab_cell_core
+-- Compiling module common_porta_latches
+-- Compiling module generic_28nm_hp_mlab_cell_impl
+-- Compiling module common_porta_registers
+-- Compiling module generic_28nm_lc_mlab_cell_impl
+-- Compiling module generic_mux
+-- Compiling module generic_device_pll
+-- Compiling module altera_mult_add
+-- Compiling module altera_mult_add_rtl
+-- Compiling module ama_signed_extension_function
+-- Compiling module ama_dynamic_signed_function
+-- Compiling module ama_register_function
+-- Compiling module ama_register_with_ext_function
+-- Compiling module ama_data_split_reg_ext_function
+-- Compiling module ama_coef_reg_ext_function
+-- Compiling module ama_adder_function
+-- Compiling module ama_multiplier_function
+-- Compiling module ama_preadder_function
+-- Compiling module ama_accumulator_function
+-- Compiling module ama_systolic_adder_function
+-- Compiling module ama_scanchain
+-- Compiling module altera_pll_reconfig_tasks
+-- Compiling module cyclonev_hps_interface_hps2fpga
+
+Top level modules:
+	altera_pll
+	generic_cdr
+	generic_m20k
+	generic_m10k
+	common_porta_latches
+	generic_28nm_hp_mlab_cell_impl
+	generic_28nm_lc_mlab_cell_impl
+	generic_mux
+	generic_device_pll
+	altera_mult_add
+	altera_pll_reconfig_tasks
+	cyclonev_hps_interface_hps2fpga
+End time: 11:25:11 on Dec 14,2015, Elapsed time: 0:00:02
+Errors: 0, Warnings: 0
+vsim  -c -do "run 7000000000000000ns; exit;" work.main_tb
+Reading pref.tcl
+
+# 10.3d
+
+# vsim -c -do "run 7000000000000000ns; exit;" work.main_tb 
+# Start time: 11:25:11 on Dec 14,2015
+# Loading work.main_tb
+# Loading work.top
+# Loading work.memory_controller
+# Loading work.rom_dual_port
+# Loading work.ALTERA_MF_MEMORY_INITIALIZATION
+# Loading work.ram_dual_port
+# Loading work.main
+# Loading work.legup_memcpy_1
+# Loading work.SHA256
+# Loading work.pad
+# Loading work.lpm_divide
+# Loading work.LPM_HINT_EVALUATION
+# Loading work.outerloop
+# run 7000000000000000ns
+# At t=            44790000 clk=1 finish=1 return_val=         0
+# Cycles:                 2237
+# ** Note: $finish    : sha256.v(6296)
+#    Time: 44790 ns  Iteration: 2  Instance: /main_tb
+# End time: 11:25:12 on Dec 14,2015, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0

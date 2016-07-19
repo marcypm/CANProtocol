@@ -1,0 +1,11 @@
+digraph {
+Node0x3738b80[label="  %3 = load i32* %1, align 4"];
+Node0x3738b80 -> Node0x3738b80[label="D:0.00ns L:2",color=blue];
+Node0x3738b80 -> Node0x3738b80[label="D:0.00ns L:2",color=blue];
+Node0x3738da0[label="  store i32 %4, i32* %1, align 4"];
+Node0x3738b80 -> Node0x3738da0[label="D:0.00ns L:2",color=red];
+Node0x3738c60[label="  %4 = add i32 %3, -1"];
+Node0x3738c60 -> Node0x3738c60[label="D:2.50ns L:0",color=blue];
+Node0x3738e80[label="  %5 = icmp eq i32 %3, 0"];
+Node0x3738e80 -> Node0x3738e80[label="D:2.49ns L:0",color=blue];
+}

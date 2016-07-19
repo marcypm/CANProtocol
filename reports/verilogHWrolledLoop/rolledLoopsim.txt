@@ -1,0 +1,21 @@
+vsim -c -do "run 700000000000ns; exit;" work."tb_sha256"
+Reading pref.tcl
+
+# 10.3d
+
+# vsim -c -do "run 700000000000ns; exit;" work.tb_sha256 
+# Start time: 09:24:52 on Dec 14,2015
+# Loading work.tb_sha256
+# Loading work.pad
+# Loading work.ram
+# Loading work.sha256
+# run 700000000000ns
+# At t=             4510000 clk=1 
+# Cycles:                  223
+# ** Note: $stop    : tb_sha256.v(97)
+#    Time: 4510 ns  Iteration: 2  Instance: /tb_sha256
+# Break in Module tb_sha256 at tb_sha256.v line 97
+# Stopped at tb_sha256.v line 97
+#  exit
+# End time: 09:24:52 on Dec 14,2015, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
