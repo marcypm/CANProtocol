@@ -4,8 +4,9 @@ module tb_sha256();
 reg clk;
 reg rst;
 wire [9:0] addr;
-wire [15:0] data;
-reg [15:0] dataLen;
+wire [7:0] data;
+reg [7:0] datareg;
+reg [7:0] dataLen;
 reg padStart;
 wire padFinish;
 
@@ -22,6 +23,7 @@ pad pad_inst(
 reg chipSel;
 reg wriEn;
 reg outEn;
+assign dataReg = data;
 
 ram #(8,10,512,30)
 ram_inst(
@@ -37,6 +39,7 @@ reg [9:0]addrToBlock;
 reg [9:0]addrToDigest;
 reg shaStart;
 wire shaFinish;
+wire sampleSHA;
 wire rp, wp;
 
 sha256 #(10,8,32,64)
@@ -53,6 +56,22 @@ sha256_inst(
     .finish(shaFinish)
 );
 
+reg resetFifo, wr, rd;
+wire full, empty;
+reg [7:0] inputbits;
+wire [7:0] outputbits;
+
+fifoBuffer fifo(
+.clock (clk),
+.reset (resetFifo),
+.wr (wr),
+.rd (rd),
+.din(data),
+.empty(empty),
+.full(full),
+.dout(outputbits)
+);
+
 initial
     clk=0;
 always @(clk)
@@ -60,6 +79,9 @@ always @(clk)
 
 always @(posedge clk) 
     $display("DATA:  %h", data);
+
+always @(posedge data)
+    $display("NEW DATA===>:  %h", data);
 
 
 initial begin
@@ -72,6 +94,11 @@ initial begin
     outEn <=0;
     addrToBlock<=0;
     addrToDigest<= 10'd64;
+
+    resetFifo <= 1;
+    wr <= 0;
+    rd <= 0; //reset is on for buffer and in DO nothing state
+
 @(negedge clk);
     rst <= 0;
     padStart <= 1;

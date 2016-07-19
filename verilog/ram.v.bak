@@ -25,8 +25,8 @@ input outEn;
 inout [15:0] data;
 
 //internal variables
-reg [DATA_WIDTH-1:0] data_out;
-reg [DATA_WIDTH-1:0] mem[0:RAM_DEPTH-1];
+reg [15:0] data_out;
+reg [15:0] mem[0:RAM_DEPTH-1];
 reg [ADDR_WIDTH-1:0] k;
 //behavior
 assign data = (outEn)? data_out: 8'hzz;

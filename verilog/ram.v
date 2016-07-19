@@ -9,7 +9,7 @@ module ram(
 );
 
 //constants
-parameter DATA_WIDTH=16;
+parameter DATA_WIDTH=8;
 parameter ADDR_WIDTH=10;
 parameter RAM_DEPTH=1<<ADDR_WIDTH;
 parameter MSGLEN=5;
@@ -22,11 +22,11 @@ input wriEn;
 input outEn;
 
 //outputs
-inout [15:0] data;
+inout [DATA_WIDTH-1:0] data;
 
 //internal variables
-reg [15:0] data_out;
-reg [15:0] mem[0:RAM_DEPTH-1];
+reg [DATA_WIDTH-1:0] data_out;
+reg [DATA_WIDTH-1:0] mem[0:RAM_DEPTH-1];
 reg [ADDR_WIDTH-1:0] k;
 //behavior
 assign data = (outEn)? data_out: 8'hzz;

@@ -2,11 +2,11 @@
 module tb_ram();
 
 reg clk;
-reg [15:0] addr;
+reg [7:0] addr;
 reg chipSel;
 reg wriEn;
 reg outEn;
-wire [7:0]data;
+wire [7:0]data; 
 
 ram #(8,9,512)
 ram_inst(

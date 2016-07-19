@@ -12,7 +12,7 @@ module sha256(
     finish
 );
 parameter ADDR_WIDTH=8;
-parameter DATA_WIDTH=16;
+parameter DATA_WIDTH=8;
 parameter WORD_WIDTH=32;
 parameter BLOK_WIDTH=64;
 
@@ -23,7 +23,7 @@ reg finish, readPhase, writePhase;
 input [ADDR_WIDTH-1:0]addrToBlock;
 input [ADDR_WIDTH-1:0]addrToDigest;
 inout [ADDR_WIDTH-1:0]addr;
-inout [15:0]data;
+inout [DATA_WIDTH-1:0]data;
 
 //control variables
 reg writeAddr;
