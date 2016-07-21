@@ -40,7 +40,7 @@ reg [9:0]addrToDigest;
 reg shaStart;
 wire shaFinish;
 wire sampleSHA;
-wire rp, wp;
+wire rp, wp, writeData;
 
 sha256 #(10,8,32,64)
 sha256_inst(
@@ -53,7 +53,8 @@ sha256_inst(
     .readPhase(rp),
     .writePhase(wp),
     .start(shaStart),
-    .finish(shaFinish)
+    .finish(shaFinish), 
+    .writeData(writeData)
 );
 
 reg resetFifo, wr, rd;
@@ -110,6 +111,12 @@ always @(posedge padFinish) begin
     $display("DATA decimal:  %d", data);
 end
 
+always @(posedge writeData) begin
+    resetFifo <= 0;    
+    wr <= 1;
+    rd <= 0;
+end
+
 always @(posedge rp) begin
     if(!rst) begin
         outEn <= 1;
@@ -121,18 +128,21 @@ always @(posedge wp) begin
         outEn <= 0;
         wriEn <= 1;
 
-	resetFifo <= 0; //toggle buffer reset off
- 	wr <= 1;//buffer in write mode
-        rd <= 0;
+	//resetFifo <= 0; //toggle buffer reset off
+ 	//wr <= 1;//buffer in write mode
+       // rd <= 0;
     end
 end
  
 always @(posedge shaFinish) begin //need to add the data to a line to feed to CANBus crc_out
     wr <= 0;
-    rd <= 1;// buffer in read mode now
+    rd <= 0; // buffer in do nothing mode
     $display("At t=%t clk=%b ", $time,clk);
     $display("Cycles: %d", ($time-50)/20);
     $display("DATA:  %d", data);
+    #800
+    wr <= 0;
+    rd <= 1; //buffer in read mode
     #1000
     $stop;
 end
